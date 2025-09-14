@@ -86,7 +86,8 @@
           "key": "Cache-Control",
           "value": "max-age=31536000"
         }
-      ]
+      ],
+      "static": true
     },
     {
       "source": "/(.*\\.html)",
