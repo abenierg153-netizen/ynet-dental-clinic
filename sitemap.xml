@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://yanetdental.com/</loc>
+    <lastmod>2024-12-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://yanetdental.com/images/og-image.jpg</image:loc>
+      <image:title>Yanet Dental Clinic - 10 Years of Beautiful Smiles</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Services Page -->
+  <url>
+    <loc>https://yanetdental.com/services</loc>
+    <lastmod>2024-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://yanetdental.com/images/services-og.jpg</image:loc>
+      <image:title>Dental Services - Yanet Dental Clinic</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Community Page -->
+  <url>
+    <loc>https://yanetdental.com/community</loc>
+    <lastmod>2024-12-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yanetdental.com/images/community-og.jpg</image:loc>
+      <image:title>Dental Community - Yanet Dental Clinic</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Book Now Page -->
+  <url>
+    <loc>https://yanetdental.com/book-now</loc>
+    <lastmod>2024-12-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://yanetdental.com/images/book-appointment-og.jpg</image:loc>
+      <image:title>Book Dental Appointment - Yanet Dental Clinic</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Blogs Page -->
+  <url>
+    <loc>https://yanetdental.com/blogs</loc>
+    <lastmod>2024-12-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://yanetdental.com/images/blog-og.jpg</image:loc>
+      <image:title>Dental Blog - Yanet Dental Clinic</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Individual Blog Posts -->
+  <url>
+    <loc>https://yanetdental.com/blogs/complete-guide-brushing-teeth</loc>
+    <lastmod>2024-12-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://yanetdental.com/images/blog-brushing-guide.jpg</image:loc>
+      <image:title>The Complete Guide to Brushing Your Teeth</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://yanetdental.com/blogs/teeth-whitening-guide</loc>
+    <lastmod>2024-12-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://yanetdental.com/images/blog-teeth-whitening.jpg</image:loc>
+      <image:title>Everything You Need to Know About Teeth Whitening</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://yanetdental.com/blogs/invisalign-vs-braces</loc>
+    <lastmod>2024-12-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://yanetdental.com/images/blog-invisalign-braces.jpg</image:loc>
+      <image:title>Invisalign vs Traditional Braces: Which is Right for You?</image:title>
+    </image:image>
+  </url>
+  
+</urlset>

@@ -1,67 +1,3 @@
-<<<<<<< HEAD
-# Yanet Dental Clinic – Landing Page
-
-A modern, fast, and professional landing page for **Yanet Dental Clinic** built with **HTML + TailwindCSS**.  
-Designed to be **beautiful, responsive, and conversion-focused**.  
-Mobile and desktop layouts are different by design for the best user experience.
-
----
-
-## 🌟 Features
-
-### 🖥️ Desktop Layout
-- Header with logo, navigation, and **Book Now** button
-- Hero section: *“10 Years of Beautiful Smiles”* + two CTAs
-- Certificates section: trust badges & recognition
-- Our Social Media Ambassador: **Rache Tesfaye** + booking system
-- Virtual Tour of the Clinic (360°/video/photo)
-- Family & Kids Package Plans
-- Smile Story Gallery (before & after transformations)
-- Our Doctors: Quick-Connect Doctor Cards with one-click booking
-- Celebrating 10 Years of Care (timeline)
-- Dental Tourism Package (international patients)
-- Footer: contact info, map, WhatsApp/Telegram, newsletter signup
-
-### 📱 Mobile Layout
-- Fixed header with logo + Book Now button
-- Simplified Hero section (headline + 1 CTA)
-- Smile Stories Gallery (visual-focused)
-- Our Doctors stacked cards
-- Sticky bottom navigation:
-  - **Services**
-  - **Community**
-  - **Book Now**
-
-### 📲 Community Hub (Mobile Button)
-Includes advanced features:
-- Smile Passport (loyalty system)
-- Smile Guarantee & Care Plan
-- AI Smile Quiz Funnel
-- AI Cost Estimator
-- Virtual Smile Consultation Hub (photo upload)
-- Smile Community & Rewards Club
-- Post-Treatment AI Follow-Up Coach
-- Smile Subscription Box
-
----
-
-## 🎨 Tech Stack
-- **HTML5**  
-- **TailwindCSS**  
-- Deployed with **Vercel**  
-- Future integrations: **Supabase** + **n8n** for booking, loyalty, and automation
-
----
-
-## 🚀 Deployment
-This site is designed for deployment on **Vercel**.  
-After cloning the repo:
-
-```bash
-git clone https://github.com/<your-username>/yanet-dental-clinic.git
-cd yanet-dental-clinic
-
-=======
 # Yanet Dental Clinic Website
 
 A professional, responsive dental clinic website built with HTML, TailwindCSS, and modern web technologies. Optimized for Vercel deployment with comprehensive analytics, SEO, and PWA features.
@@ -69,23 +5,6 @@ A professional, responsive dental clinic website built with HTML, TailwindCSS, a
 ## 🚀 Quick Deploy to Vercel
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/your-username/yanet-dental-clinic)
-
-### ⚠️ Important Vercel Deployment Notes
-
-**Root URL Configuration**: The `vercel.json` file is configured to serve `index.html` from the root URL (`/`). This ensures that when users visit your domain, they see the homepage correctly.
-
-**Clean URL Rewrites**: All pages use clean URLs without `.html` extensions:
-- `/` → serves `index.html`
-- `/services` → serves `services.html`
-- `/community` → serves `community.html`
-- `/blogs` → serves `blogs.html`
-- `/book-now` → serves `book-now.html`
-
-**After Deployment**: 
-1. Push changes to your repository
-2. Vercel will automatically redeploy
-3. Test each route to ensure clean URLs work correctly
-4. Verify that `/` loads the homepage properly
 
 ## 📋 Features
 
@@ -144,47 +63,14 @@ vercel dev
 
 ## 🌐 Deployment
 
-### Vercel Deployment Process
-
-#### 1. Initial Setup
+### Vercel Deployment
 1. **Connect Repository**: Link your GitHub repository to Vercel
 2. **Configure Domain**: Set up your custom domain (yanetdental.com)
 3. **Environment Variables**: Add analytics IDs:
    - `GA_MEASUREMENT_ID` - Google Analytics 4 ID
    - `META_PIXEL_ID` - Facebook Pixel ID
    - `TIKTOK_PIXEL_ID` - TikTok Pixel ID
-
-#### 2. Routing Configuration
-The `vercel.json` file handles all routing:
-```json
-{
-  "rewrites": [
-    { "source": "/", "destination": "/index.html" },
-    { "source": "/services", "destination": "/services.html" },
-    { "source": "/community", "destination": "/community.html" },
-    { "source": "/blogs", "destination": "/blogs.html" },
-    { "source": "/book-now", "destination": "/book-now.html" }
-  ]
-}
-```
-
-#### 3. Deployment Steps
-1. **Push to Repository**: `git push origin main`
-2. **Automatic Deploy**: Vercel detects changes and deploys automatically
-3. **Test Routes**: Verify all clean URLs work correctly:
-   - `https://yourdomain.com/` (homepage)
-   - `https://yourdomain.com/services`
-   - `https://yourdomain.com/community`
-   - `https://yourdomain.com/blogs`
-   - `https://yourdomain.com/book-now`
-
-#### 4. Post-Deployment Verification
-- ✅ Root URL (`/`) loads homepage
-- ✅ All clean URLs resolve without `.html` extension
-- ✅ HTTPS redirects work properly
-- ✅ Custom 404/500 pages function
-- ✅ Analytics tracking is active
-- ✅ PWA manifest loads correctly
+4. **Deploy**: Automatic deployment on git push
 
 ### Manual Deployment
 ```bash
@@ -202,14 +88,14 @@ vercel --prod
 
 ```
 yanet-dental-clinic/
-├── index.html              # Homepage (served from root /)
+├── index.html              # Homepage
 ├── services.html           # Services page
 ├── community.html          # Community hub
 ├── book-now.html          # Appointment booking
 ├── blogs.html             # Blog overview
 ├── 404.html               # Custom 404 page
 ├── 500.html               # Custom 500 page
-├── vercel.json            # Vercel configuration & routing
+├── vercel.json            # Vercel configuration
 ├── package.json           # Project metadata
 ├── sitemap.xml            # SEO sitemap
 ├── robots.txt             # Search engine directives
@@ -327,4 +213,3 @@ For technical support or customization requests:
 ---
 
 **Built with ❤️ for Yanet Dental Clinic**
->>>>>>> 52c6978 (Finalize Yanet Dental Clinic site for production)

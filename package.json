@@ -1,0 +1,40 @@
+{
+  "name": "yanet-dental-clinic",
+  "version": "1.0.0",
+  "description": "Professional dental clinic website with appointment booking, community features, and blog",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Static site - no build step required'",
+    "start": "vercel dev",
+    "deploy": "vercel --prod",
+    "preview": "vercel"
+  },
+  "keywords": [
+    "dental",
+    "clinic",
+    "healthcare",
+    "appointment-booking",
+    "medical-website",
+    "responsive-design",
+    "tailwindcss"
+  ],
+  "author": "Yanet Dental Clinic",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yanet-dental/website"
+  },
+  "homepage": "https://yanetdental.com",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  },
+  "vercel": {
+    "buildCommand": "echo 'Static site - no build required'",
+    "outputDirectory": ".",
+    "installCommand": "echo 'No dependencies to install'"
+  }
+}
