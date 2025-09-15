@@ -171,106 +171,98 @@
     <!-- Minimal Sticky Header -->
     <header class="fixed top-0 left-0 right-0 bg-white shadow-lg z-50" 
             x-data="{ mobileMenuOpen: false }">
-        <div class="max-w-7xl mx-auto px-4 py-3">
-            <div class="flex justify-between items-center">
-                <!-- Logo -->
-                <div class="flex items-center">
-                    <div class="w-8 h-8 bg-blue-700 rounded-full flex items-center justify-center mr-2">
-                        <span class="text-white text-sm">🦷</span>
-                    </div>
-                    <h1 class="text-blue-700 font-bold text-lg">
-                        YANET DENTAL
-                    </h1>
+        <div class="flex justify-between items-center px-4 py-3">
+            <!-- Logo -->
+            <div class="flex items-center">
+                <div class="w-8 h-8 bg-blue-700 rounded-full flex items-center justify-center mr-2">
+                    <span class="text-white text-sm">🦷</span>
                 </div>
-                
-                <!-- Desktop Navigation -->
-                <nav class="hidden md:flex items-center space-x-1">
-                    <a href="/" class="text-gray-700 hover:text-blue-600 px-3 py-2 transition-colors">Home</a>
-                    <a href="#services" class="text-gray-700 hover:text-blue-600 px-3 py-2 transition-colors">Services</a>
-                    <a href="#booking" class="text-gray-700 hover:text-blue-600 px-3 py-2 transition-colors">Book</a>
-                </nav>
-                
-                <!-- Desktop Call Button -->
-                <div class="hidden md:flex items-center">
-                    <a href="tel:+2519XXXXXXXX" 
-                       class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition-colors">
-                        Call Us
-                    </a>
-                </div>
-                
-                <!-- Mobile Menu Button -->
-                <button @click="mobileMenuOpen = !mobileMenuOpen"
-                        class="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors">
-                    <svg class="w-6 h-6 transition-transform duration-200" 
-                         :class="{ 'rotate-180': mobileMenuOpen }"
-                         fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
+                <h1 class="text-blue-700 font-bold text-lg">
+                    YANET DENTAL
+                </h1>
             </div>
             
-            <!-- Mobile Menu -->
-            <div x-show="mobileMenuOpen" 
-                 x-transition:enter="transition ease-out duration-200"
-                 x-transition:enter-start="opacity-0 transform -translate-y-2"
-                 x-transition:enter-end="opacity-100 transform translate-y-0"
-                 x-transition:leave="transition ease-in duration-150"
-                 x-transition:leave-start="opacity-100 transform translate-y-0"
-                 x-transition:leave-end="opacity-0 transform -translate-y-2"
-                 class="md:hidden mt-4">
-                <nav class="flex flex-col space-y-2 bg-white rounded-lg shadow px-4 py-3">
-                    <a href="/" 
-                       class="text-gray-700 hover:text-blue-600 px-3 py-2 transition-colors"
-                       @click="mobileMenuOpen = false">Home</a>
-                    <a href="#services" 
-                       class="text-gray-700 hover:text-blue-600 px-3 py-2 transition-colors"
-                       @click="mobileMenuOpen = false">Services</a>
-                    <a href="#booking" 
-                       class="text-gray-700 hover:text-blue-600 px-3 py-2 transition-colors"
-                       @click="mobileMenuOpen = false">Book</a>
-                    <a href="tel:+2519XXXXXXXX" 
-                       class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition-colors text-center mt-2"
-                       @click="mobileMenuOpen = false">Call Us</a>
-                </nav>
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center space-x-1">
+                <a href="/" class="text-gray-700 hover:text-blue-600 px-3 py-2 transition-colors">Home</a>
+                <a href="#services" class="text-gray-700 hover:text-blue-600 px-3 py-2 transition-colors">Services</a>
+                <a href="#booking" class="text-gray-700 hover:text-blue-600 px-3 py-2 transition-colors">Book</a>
+            </nav>
+            
+            <!-- Desktop Call Button -->
+            <div class="hidden md:flex items-center">
+                <a href="tel:+2519XXXXXXXX" 
+                   class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition-colors">
+                    Call Us
+                </a>
             </div>
+            
+            <!-- Mobile Menu Button -->
+            <button @click="mobileMenuOpen = !mobileMenuOpen"
+                    class="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors">
+                <svg class="w-6 h-6 transition-transform duration-200" 
+                     :class="{ 'rotate-180': mobileMenuOpen }"
+                     fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div x-show="mobileMenuOpen" 
+             x-transition:enter="transition ease-out duration-200"
+             x-transition:enter-start="opacity-0 transform -translate-y-2"
+             x-transition:enter-end="opacity-100 transform translate-y-0"
+             x-transition:leave="transition ease-in duration-150"
+             x-transition:leave-start="opacity-100 transform translate-y-0"
+             x-transition:leave-end="opacity-0 transform -translate-y-2"
+             class="md:hidden mt-4">
+            <nav class="flex flex-col space-y-2 mt-4 bg-white rounded-lg shadow px-4 py-3">
+                <a href="/" 
+                   class="text-gray-700 hover:text-blue-600 px-3 py-2 transition-colors"
+                   @click="mobileMenuOpen = false">Home</a>
+                <a href="#services" 
+                   class="text-gray-700 hover:text-blue-600 px-3 py-2 transition-colors"
+                   @click="mobileMenuOpen = false">Services</a>
+                <a href="#booking" 
+                   class="text-gray-700 hover:text-blue-600 px-3 py-2 transition-colors"
+                   @click="mobileMenuOpen = false">Book</a>
+                <a href="tel:+2519XXXXXXXX" 
+                   class="bg-blue-600 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-700 transition-colors text-center mt-2"
+                   @click="mobileMenuOpen = false">Call Us</a>
+            </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="pt-24 pb-16 bg-gradient-to-br from-blue-50 to-cyan-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center">
-                <!-- Main Heading -->
-                <h1 class="text-4xl md:text-5xl font-extrabold text-blue-700 mb-6 leading-tight animate-fade-in-up">
-                    Smile Brighter With Expert Care in the Heart of Addis Ababa 🇪🇹
-                </h1>
-                
-                <!-- Subheading -->
-                <p class="text-xl md:text-2xl text-gray-700 font-medium mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in-up">
-                    Welcome to Yanet Speciality Dental Clinic – Ethiopia's leading digital dentistry hub with world-class care.
-                </p>
-                
-                <!-- Doctor Image -->
-                <div class="flex justify-center mb-8 animate-fade-in-up">
-                    <div class="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden shadow-2xl border-8 border-white">
-                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" 
-                             alt="Dr. Yanet - Lead Dentist" 
-                             class="w-full h-full object-cover">
-                    </div>
+    <section class="pt-24 pb-16 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <!-- Left Side - Doctor Image -->
+                <div class="order-2 md:order-1">
+                    <img src="/images/doctor.png" 
+                         alt="Dentist at Yanet Dental Clinic" 
+                         class="rounded-full shadow-lg w-full max-w-md mx-auto">
                 </div>
                 
-                <!-- CTA Buttons -->
-                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up">
-                    <a href="/book-now" 
-                       class="mt-8 inline-block bg-blue-600 text-white text-lg px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition">
-                        Book Your Appointment
-                    </a>
-                    <a href="#services" 
-                       class="border-2 border-primary-blue text-primary-blue px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary-blue hover:text-white transition-colors duration-200"
-                       data-controller="smooth-scroll"
-                       data-action="click->smooth-scroll#scrollTo">
-                        Our Services
-                    </a>
+                <!-- Right Side - Text and Buttons -->
+                <div class="order-1 md:order-2 text-center md:text-left">
+                    <h1 class="text-3xl md:text-5xl font-bold text-blue-800 leading-tight">
+                        Smile Brighter With Expert Dental Care
+                    </h1>
+                    <p class="mt-4 text-lg text-gray-600">
+                        Trusted dental clinic in Addis Ababa providing world-class care with compassion.
+                    </p>
+                    <div class="mt-6 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+                        <a href="#booking" 
+                           class="bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition-colors">
+                            Book Now
+                        </a>
+                        <a href="tel:+2519XXXXXXXX" 
+                           class="bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700 transition-colors">
+                            Call Us
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
