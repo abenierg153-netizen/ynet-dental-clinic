@@ -180,18 +180,36 @@
                     </div>
                 </div>
                 
+                <!-- Navigation Menu -->
+                <nav class="hidden lg:flex items-center space-x-1">
+                    <a href="/" class="text-gray-700 hover:text-blue-600 px-3 py-2 transition-colors">Home</a>
+                    <a href="/services" class="text-gray-700 hover:text-blue-600 px-3 py-2 transition-colors">Our Services</a>
+                    <a href="/community" class="text-gray-700 hover:text-blue-600 px-3 py-2 transition-colors">Community</a>
+                </nav>
+                
                 <!-- Center Title -->
-                <div class="flex-1 text-center">
-                    <h1 class="text-lg sm:text-xl lg:text-2xl font-bold text-primary-blue">
+                <div class="flex-1 text-center lg:hidden">
+                    <h1 class="text-lg sm:text-xl font-bold text-primary-blue">
                         YANET SPECIALITY DENTAL CLINIC
                     </h1>
                 </div>
                 
-                <!-- Call Us Button -->
-                <div class="flex items-center">
+                <!-- Desktop Title -->
+                <div class="hidden lg:flex flex-1 justify-center">
+                    <h1 class="text-xl font-bold text-primary-blue">
+                        YANET SPECIALITY DENTAL CLINIC
+                    </h1>
+                </div>
+                
+                <!-- Call Us Button and Book Now -->
+                <div class="flex items-center space-x-2">
                     <a href="tel:+251911234567" 
                        class="bg-primary-blue text-white px-4 py-2 rounded-lg font-semibold hover:bg-primary-blue transition-colors duration-200 shadow-md">
                         Call Us
+                    </a>
+                    <a href="/book-now" 
+                       class="ml-4 inline-block bg-blue-600 text-white px-5 py-2 rounded-lg shadow hover:bg-blue-700 transition">
+                        Book Now
                     </a>
                     
                     <!-- Mobile Menu Button -->
@@ -216,11 +234,15 @@
                  class="lg:hidden border-t border-gray-200 py-4"
                  data-mobile-menu-target="menu">
                 <nav class="flex flex-col space-y-3">
-                    <a href="#services" 
+                    <a href="/" 
                        class="text-primary-blue hover:text-blue-700 transition-colors py-2"
-                       data-action="click->mobile-menu#close"
-                       data-controller="smooth-scroll"
-                       data-action="click->smooth-scroll#scrollTo">Services</a>
+                       data-action="click->mobile-menu#close">Home</a>
+                    <a href="/services" 
+                       class="text-primary-blue hover:text-blue-700 transition-colors py-2"
+                       data-action="click->mobile-menu#close">Our Services</a>
+                    <a href="/community" 
+                       class="text-primary-blue hover:text-blue-700 transition-colors py-2"
+                       data-action="click->mobile-menu#close">Community</a>
                     <a href="#about" 
                        class="text-primary-blue hover:text-blue-700 transition-colors py-2"
                        data-action="click->mobile-menu#close"
@@ -233,7 +255,7 @@
                        data-action="click->smooth-scroll#scrollTo">Contact</a>
                     <a href="/book-now" 
                        class="bg-primary-blue text-white px-4 py-2 rounded-lg font-semibold text-center hover:bg-primary-blue transition-colors">
-                        Book Appointment
+                        Book Now
                     </a>
                 </nav>
             </div>
@@ -245,15 +267,13 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <!-- Main Heading -->
-                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 animate-fade-in-up">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-blue-700 mb-6 leading-tight animate-fade-in-up">
                     Smile Brighter With Expert Care in the Heart of Addis Ababa 🇪🇹
                 </h1>
                 
                 <!-- Subheading -->
-                <p class="text-lg sm:text-xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in-up">
-                    At Yanet Speciality Dental Clinic, we combine advanced dental technology with compassionate care 
-                    to provide comprehensive oral health solutions. Our experienced team of dental professionals 
-                    is dedicated to helping you achieve and maintain a healthy, beautiful smile in the heart of Ethiopia's capital.
+                <p class="text-xl md:text-2xl text-gray-700 font-medium mb-12 max-w-4xl mx-auto leading-relaxed animate-fade-in-up">
+                    Welcome to Yanet Speciality Dental Clinic – Ethiopia's leading digital dentistry hub with world-class care.
                 </p>
                 
                 <!-- Doctor Image -->
@@ -268,7 +288,7 @@
                 <!-- CTA Buttons -->
                 <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up">
                     <a href="/book-now" 
-                       class="bg-primary-blue text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-primary-blue transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                       class="mt-8 inline-block bg-blue-600 text-white text-lg px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition">
                         Book Your Appointment
                     </a>
                     <a href="#services" 
